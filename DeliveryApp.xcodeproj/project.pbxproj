@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		49A0AD2585923929E6F5B00F /* Pods_DeliveryAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240F21501375CC73B4186AD8 /* Pods_DeliveryAppTests.framework */; };
 		9A64DEE822B9FA900013A2C0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A64DEE722B9FA900013A2C0 /* CoreData.framework */; };
+		9A64DEF222BA09860013A2C0 /* DeliveryData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A64DEF022BA09860013A2C0 /* DeliveryData.xcdatamodeld */; };
+		9A64DEF422BA0BD00013A2C0 /* DeliveryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64DEF322BA0BD00013A2C0 /* DeliveryAppTests.swift */; };
+		9A64DEF622BA0C1B0013A2C0 /* DeliveryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64DEF522BA0C1B0013A2C0 /* DeliveryAppUITests.swift */; };
 		9A9B41C422B79D7A005C09CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B41C322B79D7A005C09CD /* AppDelegate.swift */; };
 		9A9B41CE22B79D7B005C09CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B41CD22B79D7B005C09CD /* Assets.xcassets */; };
 		9A9B41D122B79D7B005C09CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B41CF22B79D7B005C09CD /* LaunchScreen.storyboard */; };
-		9A9B41DC22B79D7B005C09CD /* NagarroChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B41DB22B79D7B005C09CD /* NagarroChallengeTests.swift */; };
-		9A9B41E722B79D7B005C09CD /* NagarroChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B41E622B79D7B005C09CD /* NagarroChallengeUITests.swift */; };
 		9A9B41F822B79F1D005C09CD /* AnchorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B41F422B79F1C005C09CD /* AnchorStruct.swift */; };
 		9A9B41FA22B79F1D005C09CD /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B41F622B79F1C005C09CD /* AppConstant.swift */; };
 		9A9B41FE22B7A085005C09CD /* DeliveryListTblVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B41FD22B7A085005C09CD /* DeliveryListTblVC.swift */; };
@@ -61,16 +62,17 @@
 		7203F755D1001C0BBAAA7049 /* Pods_DeliveryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliveryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AF6562E8A9D87D0BA40C90 /* Pods-DeliveryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DeliveryAppTests/Pods-DeliveryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A64DEE722B9FA900013A2C0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9A64DEF122BA09860013A2C0 /* DeliveryData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeliveryData.xcdatamodel; sourceTree = "<group>"; };
+		9A64DEF322BA0BD00013A2C0 /* DeliveryAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryAppTests.swift; sourceTree = "<group>"; };
+		9A64DEF522BA0C1B0013A2C0 /* DeliveryAppUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryAppUITests.swift; sourceTree = "<group>"; };
 		9A9B41C022B79D7A005C09CD /* DeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9B41C322B79D7A005C09CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9B41CD22B79D7B005C09CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A9B41D022B79D7B005C09CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A9B41D222B79D7B005C09CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A9B41D722B79D7B005C09CD /* DeliveryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliveryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A9B41DB22B79D7B005C09CD /* NagarroChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NagarroChallengeTests.swift; sourceTree = "<group>"; };
 		9A9B41DD22B79D7B005C09CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A9B41E222B79D7B005C09CD /* DeliveryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliveryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A9B41E622B79D7B005C09CD /* NagarroChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NagarroChallengeUITests.swift; sourceTree = "<group>"; };
 		9A9B41E822B79D7B005C09CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A9B41F422B79F1C005C09CD /* AnchorStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorStruct.swift; sourceTree = "<group>"; };
 		9A9B41F622B79F1C005C09CD /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				9A9B41CD22B79D7B005C09CD /* Assets.xcassets */,
 				9AF9BE0722B8A45100E096CF /* Localizable.strings */,
 				9A9B41CF22B79D7B005C09CD /* LaunchScreen.storyboard */,
+				9A64DEF022BA09860013A2C0 /* DeliveryData.xcdatamodeld */,
 				9AF9BE0122B8A2C800E096CF /* Main.storyboard */,
 				9A9B41D222B79D7B005C09CD /* Info.plist */,
 			);
@@ -189,7 +192,7 @@
 			children = (
 				9A9B422022B7B67E005C09CD /* DeliveryData.json */,
 				9A9B422122B7B67E005C09CD /* UnexpectedResponse.json */,
-				9A9B41DB22B79D7B005C09CD /* NagarroChallengeTests.swift */,
+				9A64DEF322BA0BD00013A2C0 /* DeliveryAppTests.swift */,
 				9A9B422522B7B845005C09CD /* NetworkServiceTests.swift */,
 				9A9B426C22B7CD02005C09CD /* DeliveryViewModelTest.swift */,
 				9A9B41DD22B79D7B005C09CD /* Info.plist */,
@@ -200,7 +203,7 @@
 		9A9B41E522B79D7B005C09CD /* DeliveryAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9A9B41E622B79D7B005C09CD /* NagarroChallengeUITests.swift */,
+				9A64DEF522BA0C1B0013A2C0 /* DeliveryAppUITests.swift */,
 				9A9B41E822B79D7B005C09CD /* Info.plist */,
 			);
 			path = DeliveryAppUITests;
@@ -576,6 +579,7 @@
 				9A9B420E22B7A346005C09CD /* LoaderActivity.swift in Sources */,
 				9A9B420222B7A271005C09CD /* DeliveryModel.swift in Sources */,
 				9A9B421022B7A35E005C09CD /* NetworkService.swift in Sources */,
+				9A64DEF222BA09860013A2C0 /* DeliveryData.xcdatamodeld in Sources */,
 				9A9B421222B7A38F005C09CD /* UIViewExtension.swift in Sources */,
 				9A9B41FA22B79F1D005C09CD /* AppConstant.swift in Sources */,
 				9A9B420022B7A247005C09CD /* DeliveryViewModel.swift in Sources */,
@@ -596,8 +600,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A9B422622B7B845005C09CD /* NetworkServiceTests.swift in Sources */,
-				9A9B41DC22B79D7B005C09CD /* NagarroChallengeTests.swift in Sources */,
 				9A9B426D22B7CD02005C09CD /* DeliveryViewModelTest.swift in Sources */,
+				9A64DEF422BA0BD00013A2C0 /* DeliveryAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,7 +609,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A9B41E722B79D7B005C09CD /* NagarroChallengeUITests.swift in Sources */,
+				9A64DEF622BA0C1B0013A2C0 /* DeliveryAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,6 +929,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9A64DEF022BA09860013A2C0 /* DeliveryData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9A64DEF122BA09860013A2C0 /* DeliveryData.xcdatamodel */,
+			);
+			currentVersion = 9A64DEF122BA09860013A2C0 /* DeliveryData.xcdatamodel */;
+			path = DeliveryData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9A9B41B822B79D7A005C09CD /* Project object */;
 }

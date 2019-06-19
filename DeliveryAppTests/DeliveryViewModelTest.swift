@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import NagarroChallenge
+@testable import DeliveryApp
 class DeliveryViewModelTest: XCTestCase {
     var viewModel = DeliveryViewModel()
     override func setUp() {

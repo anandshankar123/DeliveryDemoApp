@@ -16,13 +16,13 @@ class NetworkService: NSObject {
         print("urlString : \(urlString)")
         //note : if there is no internet we have to show data from local
         if !(Reachability.init()?.isReachable ?? true) {
-//            CoreDataHelper.sharedManager.fetchDeliveryData(saveUrl: urlString) { (deliveryData,dataAvailable) in
-//                if deliveryData != nil  && dataAvailable {
-//                    completion(deliveryData,nil)
-//                } else {
-//                    completion([],nil)
-//                }
-//            }
+            CoreDataHelper.sharedManager.fetchDeliveryData(saveUrl: urlString) { (deliveryData,dataAvailable) in
+                if deliveryData != nil  && dataAvailable {
+                    completion(deliveryData,nil)
+                } else {
+                    completion([],nil)
+                }
+            }
             return
         }
         guard let url = URL(string: urlString) else { return }
@@ -35,7 +35,7 @@ class NetworkService: NSObject {
             guard let data = data else { return }
             do {
                 if let stringObj = String.init(data: data, encoding: String.Encoding.utf8) {
-                 // CoreDataHelper.sharedManager.checkAndSaveData(saveUrl: urlString, dataToSave: stringObj)
+                  CoreDataHelper.sharedManager.checkAndSaveData(saveUrl: urlString, dataToSave: stringObj)
                 }
                 let delivery = try JSONDecoder().decode([DeliveryModel].self, from: data)
                 DispatchQueue.main.async {

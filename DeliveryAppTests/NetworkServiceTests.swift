@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import NagarroChallenge
+@testable import DeliveryApp
 import Mockingjay
 class NetworkServiceTests: XCTestCase {
     static let testUrlStr = "https://mock-api-mobile.dev.lalamove.com/deliveries?offset=0&limit=20"
