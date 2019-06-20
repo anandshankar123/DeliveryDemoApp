@@ -13,7 +13,6 @@
 		9A64DEF422BA0BD00013A2C0 /* DeliveryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64DEF322BA0BD00013A2C0 /* DeliveryAppTests.swift */; };
 		9A64DEF622BA0C1B0013A2C0 /* DeliveryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64DEF522BA0C1B0013A2C0 /* DeliveryAppUITests.swift */; };
 		9A64DF0322BA27A50013A2C0 /* ReachabilityWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64DF0222BA27A50013A2C0 /* ReachabilityWrapper.swift */; };
-		9A64DF0522BA4C1E0013A2C0 /* DeliveryViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64DF0422BA4C1D0013A2C0 /* DeliveryViewModelProtocol.swift */; };
 		9A9B41C422B79D7A005C09CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B41C322B79D7A005C09CD /* AppDelegate.swift */; };
 		9A9B41CE22B79D7B005C09CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B41CD22B79D7B005C09CD /* Assets.xcassets */; };
 		9A9B41D122B79D7B005C09CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B41CF22B79D7B005C09CD /* LaunchScreen.storyboard */; };
@@ -38,6 +37,7 @@
 		9A9B426D22B7CD02005C09CD /* DeliveryViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B426C22B7CD02005C09CD /* DeliveryViewModelTest.swift */; };
 		9AF9BDFF22B8A2C800E096CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF9BE0122B8A2C800E096CF /* Main.storyboard */; };
 		9AF9BE0B22B8C8A500E096CF /* DeliveryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9BE0A22B8C8A500E096CF /* DeliveryDetailViewModel.swift */; };
+		9AFCBE4F22BB49480041A27D /* DeliveryViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCBE4E22BB49480041A27D /* DeliveryViewModelProtocol.swift */; };
 		D4D14628F6552DD551A1559B /* Pods_DeliveryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7203F755D1001C0BBAAA7049 /* Pods_DeliveryApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +69,6 @@
 		9A64DEF522BA0C1B0013A2C0 /* DeliveryAppUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryAppUITests.swift; sourceTree = "<group>"; };
 		9A64DF0022BA104D0013A2C0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ../../Localizable.strings; sourceTree = "<group>"; };
 		9A64DF0222BA27A50013A2C0 /* ReachabilityWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReachabilityWrapper.swift; path = ../NetworkServices/ReachabilityWrapper.swift; sourceTree = "<group>"; };
-		9A64DF0422BA4C1D0013A2C0 /* DeliveryViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewModelProtocol.swift; sourceTree = "<group>"; };
 		9A9B41C022B79D7A005C09CD /* DeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9B41C322B79D7A005C09CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9B41CD22B79D7B005C09CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		9AF9BE0022B8A2C800E096CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AF9BE0322B8A2CE00E096CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		9AF9BE0A22B8C8A500E096CF /* DeliveryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailViewModel.swift; sourceTree = "<group>"; };
+		9AFCBE4E22BB49480041A27D /* DeliveryViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryViewModelProtocol.swift; sourceTree = "<group>"; };
 		A7CA92451E6111C7B51507A2 /* Pods-NagarroChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NagarroChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-NagarroChallengeTests/Pods-NagarroChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6BF669E40604B580D5C8D0F /* Pods-NagarroChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NagarroChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-NagarroChallengeTests/Pods-NagarroChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6C887B2D7C5F2715B24F3EF /* Pods-DeliveryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryApp.release.xcconfig"; path = "Target Support Files/Pods-DeliveryApp/Pods-DeliveryApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,11 +210,11 @@
 		9A9B41DA22B79D7B005C09CD /* DeliveryAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A9B422022B7B67E005C09CD /* DeliveryData.json */,
-				9A9B422122B7B67E005C09CD /* UnexpectedResponse.json */,
+				9AFCBE5322BB4A700041A27D /* ViewModel */,
+				9AFCBE5222BB4A5B0041A27D /* NetworkService */,
+				9AFCBE5122BB4A3F0041A27D /* Resources */,
+				9AFCBE5022BB4A190041A27D /* View */,
 				9A64DEF322BA0BD00013A2C0 /* DeliveryAppTests.swift */,
-				9A9B422522B7B845005C09CD /* NetworkServiceTests.swift */,
-				9A9B426C22B7CD02005C09CD /* DeliveryViewModelTest.swift */,
 				9A9B41DD22B79D7B005C09CD /* Info.plist */,
 			);
 			path = DeliveryAppTests;
@@ -271,7 +271,7 @@
 			children = (
 				9A9B41FF22B7A247005C09CD /* DeliveryViewModel.swift */,
 				9AF9BE0A22B8C8A500E096CF /* DeliveryDetailViewModel.swift */,
-				9A64DF0422BA4C1D0013A2C0 /* DeliveryViewModelProtocol.swift */,
+				9AFCBE4E22BB49480041A27D /* DeliveryViewModelProtocol.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -325,6 +325,38 @@
 				9A9B420522B7A2BC005C09CD /* DeliveryDetailVC.swift */,
 			);
 			path = DeliveryDeatilController;
+			sourceTree = "<group>";
+		};
+		9AFCBE5022BB4A190041A27D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9AFCBE5122BB4A3F0041A27D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B422022B7B67E005C09CD /* DeliveryData.json */,
+				9A9B422122B7B67E005C09CD /* UnexpectedResponse.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9AFCBE5222BB4A5B0041A27D /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B422522B7B845005C09CD /* NetworkServiceTests.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		9AFCBE5322BB4A700041A27D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B426C22B7CD02005C09CD /* DeliveryViewModelTest.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B660EC8FAA40931F23C5C266 /* Pods */ = {
@@ -600,7 +632,6 @@
 				9A9B41F822B79F1D005C09CD /* AnchorStruct.swift in Sources */,
 				9A64DF0322BA27A50013A2C0 /* ReachabilityWrapper.swift in Sources */,
 				9A9B420E22B7A346005C09CD /* LoaderActivity.swift in Sources */,
-				9A64DF0522BA4C1E0013A2C0 /* DeliveryViewModelProtocol.swift in Sources */,
 				9A9B420222B7A271005C09CD /* DeliveryModel.swift in Sources */,
 				9A9B421022B7A35E005C09CD /* NetworkService.swift in Sources */,
 				9A64DEF222BA09860013A2C0 /* DeliveryData.xcdatamodeld in Sources */,
@@ -608,6 +639,7 @@
 				9A9B41FA22B79F1D005C09CD /* AppConstant.swift in Sources */,
 				9A9B420022B7A247005C09CD /* DeliveryViewModel.swift in Sources */,
 				9A9B421622B7A3B8005C09CD /* CoreDataHelper.swift in Sources */,
+				9AFCBE4F22BB49480041A27D /* DeliveryViewModelProtocol.swift in Sources */,
 				9A9B420A22B7A309005C09CD /* Alert.swift in Sources */,
 				9A9B41FE22B7A085005C09CD /* DeliveryListTblVC.swift in Sources */,
 				9A9B420422B7A2A8005C09CD /* DeliveryTblCell.swift in Sources */,
