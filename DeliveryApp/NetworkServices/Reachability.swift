@@ -110,6 +110,8 @@ public extension Reachability {
         notifierRunning = true
     }
     
+    
+    
     func stopNotifier() {
         defer { notifierRunning = false }
         guard let reachabilityRef = reachabilityRef else { return }

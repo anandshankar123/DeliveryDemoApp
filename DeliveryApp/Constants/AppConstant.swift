@@ -37,6 +37,8 @@ struct ConstantMessage {
     static let alertBtnText = "OK"
     static let descriptionNotFound = "Delivery Address or Description not found"
     static let dataNotFound = "Not Found"
+    static let checkConnectivity = "Please check your internet connectivity and retry"
+
 }
 
 struct CoreDataEntityName {
@@ -73,4 +75,12 @@ class CustomNavigationTitleView: UIView {
 }
 struct ColorConstant {
    static let tableBackGroundColor = UIColor.rgb(red: 12, green: 47, blue: 57)
+   static let activityIndicatorTintColor = UIColor(red: 0.25,green: 0.72,blue: 0.85,alpha: 1.0)
+}
+
+struct FontConstant {
+    static let headerFont = UIFont.boldSystemFont(ofSize: 18)
+    static let titleFont = UIFont.boldSystemFont(ofSize: 16)
+    static let textFont = UIFont.systemFont(ofSize: 16)
+
 }

@@ -4,8 +4,6 @@
 //
 //  Created by Kanika on 13/06/19.
 //  Copyright © 2019 Kanika. All rights reserved.
-//
-
 import UIKit
 class NetworkService: NSObject {
     static let shared = NetworkService()
@@ -15,7 +13,7 @@ class NetworkService: NSObject {
         let urlString = retiveURLForDeliveryData(offset: offset, limit: limit)
         print("urlString : \(urlString)")
         //note : if there is no internet we have to show data from local
-        if !(Reachability.init()?.isReachable ?? true) {
+        if !ReachabilityWrapper.checkForInternet() {
             CoreDataHelper.sharedManager.fetchDeliveryData(saveUrl: urlString) { (deliveryData,dataAvailable) in
                 if deliveryData != nil  && dataAvailable {
                     completion(deliveryData,nil)
@@ -39,11 +37,11 @@ class NetworkService: NSObject {
                 }
                 let delivery = try JSONDecoder().decode([DeliveryModel].self, from: data)
                 DispatchQueue.main.async {
-                    print("delivery object is : \(delivery)")
+                    print("delivery object is : \(delivery.count)")
                     completion(delivery, nil)
                 }
             } catch let jsonErr {
-               // print("Failed to decode:", jsonErr)
+                 print("Failed to decode:", jsonErr)
                 let error = NSError(domain:"",code:401,userInfo:
                     [NSLocalizedDescriptionKey: jsonErr.localizedDescription])
                 completion(nil,error)

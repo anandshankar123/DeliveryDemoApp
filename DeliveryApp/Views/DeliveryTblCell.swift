@@ -5,10 +5,7 @@ import SDWebImage
 class DeliveryTblCell: UITableViewCell {
     var deliveryData: DeliveryModel? {
         didSet {
-            productImage.sd_setImage(with: URL(string:
-                deliveryData?.imageURL ?? ""), placeholderImage: UIImage(named: "placeHolder"),
-                options: .refreshCached, context: nil)
-            descriptionLbl.text = deliveryData?.deliveryDescription
+            
         }
     }
     private let descriptionLbl: UILabel = {
@@ -57,6 +54,13 @@ class DeliveryTblCell: UITableViewCell {
         contentView.addConstraints(labelVerticalConstraint)
         productImage.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
+
+    func configureUI(indexPath: IndexPath, viewModel : DeliveryListModelProtocol) {
+        descriptionLbl.text = viewModel.getDeliveryDescription(index: indexPath)
+        productImage.sd_setImage(with: URL(string:
+            viewModel.getImageUrl(index: indexPath)), placeholderImage: UIImage(named: "placeHolder"), options: .refreshCached, context: nil)
+    }
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

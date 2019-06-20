@@ -9,6 +9,7 @@
 import Foundation
 class DeliveryDetailViewModel: NSObject {
     var selectedDelivery: DeliveryModel
+    
     init(selectedDelivery: DeliveryModel) {
         self.selectedDelivery = selectedDelivery
         super.init()

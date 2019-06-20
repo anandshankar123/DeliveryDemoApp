@@ -73,6 +73,16 @@ class CoreDataHelper {
        savedDeliveryData.deliveryData = dataToUpdate
        saveData()
   }
+    func checkDataAvailableOrNot(entity : String) -> Bool {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: CoreDataEntityName.entityName)
+        do {
+            let result = try contextObj.fetch(request) as? [NSManagedObject]
+            if result?.count ?? 0 > 0 {
+                return false
+            }else {return true }
+            }catch { return true }
+    }
+    
     func fetchDeliveryData(saveUrl: String, completion: (_ data: [DeliveryModel]?,_ dataFound: Bool) -> Void) {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: CoreDataEntityName.entityName)
         request.predicate = NSPredicate(format: "saveUrl = %@", saveUrl)

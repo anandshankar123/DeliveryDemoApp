@@ -18,6 +18,7 @@ class DeliveryDetailVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = ConstantMessage.detailHeaderText
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in 
             self?.detailView.showMarker()
         }
